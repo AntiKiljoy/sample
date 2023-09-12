@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer id="myFooter"></footer>
+    <script>
+        const footerContent = {
+            id: 1,
+            phone:"01793 389220", 
+            pizzeria: "Joe's",
+            email: "JoePizza@bestpizza.com",
+            hours: "Every day 10-14",
+            link: "https://gwr.com",
+            pic: "https://pbs.twimg.com/media/F5yu06RXUAEg7wT?format=webp&name=medium"
+
+        }
+
+        console.log(footerContent.pizzeria);
+
+        myFooter.innerHTML = "<div id='address'>";
+        myFooter.innerHTML+= "<h1>" + footerContent.pizzeria + "</h1>";
+        myFooter.innerHTML+= "<p>" + footerContent.phone + "</p>";
+        myFooter.innerHTML+= "<img src='" + footerContent.pic +"'alt='text here'>";
+        smyFooter.innerHTML = "</div>";
+    </script>
+</body>
+</html>
